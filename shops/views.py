@@ -4,6 +4,7 @@ from django.contrib.gis.db.models.functions import Distance
 from .models import Shop
 # Create your views here.
 
+# this is hard coded value of "Bangalore" as a location
 longitude = 12.9716
 latitude = 77.5946
 
