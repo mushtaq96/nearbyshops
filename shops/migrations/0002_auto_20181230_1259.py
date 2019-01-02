@@ -5,7 +5,7 @@ import json
 from django.contrib.gis.geos import fromstr
 from pathlib import Path
 
-DATA_FILENAME = 'data.json'
+DATA_FILENAME = 'data.json' #the file from where the co-ordinates is taken
 
 
 def load_data(apps, schema_editor):
@@ -28,6 +28,7 @@ def load_data(apps, schema_editor):
                     Shop(name=name, location=location).save()
             except KeyError:
                 pass
+#srid is Spatial Reference Systen Identifier which is a unique value to identify spatial reference systems
 
 
 class Migration(migrations.Migration):
